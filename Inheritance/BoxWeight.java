@@ -7,6 +7,11 @@ public class BoxWeight extends Box {
         this.weight = -1;
     }
 
+    BoxWeight(BoxWeight other){
+        super(other);
+        weight = other.weight;
+    }
+
     public BoxWeight(double l, double h, double w, double weight){
         super(l,h,w);
         //call the parent class constructor
@@ -25,5 +30,15 @@ public class BoxWeight extends Box {
         double wid = box5.w;
         // double weig = box5.weight;
         // can't access child class propweties
+
+        // BoxWeight box6 = new Box();
+
+        //reference a child to parent
+        //there are many variables in both parent and child classes
+        //you are given access to variables that are in the ref type i. e BoxWeight
+        //hence you should have access to weight variable
+        //thid also meeans that the one we are trying to access should be initialized 
+        // but here when the obj itself is of type parent class, how will you call the constructor of child class
+        // this is why error
     }
 }
