@@ -20,7 +20,7 @@ public class BoxPrice extends BoxWeight{
     }
 
     public static void main(String[] args) {
-        BoxPrice box3 = new BoxPrice(2,2,5,4,8);
+        BoxPrice box3 = new BoxPrice(2, 2, 5, 4, 8);
 
     }
     
